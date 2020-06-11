@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="7" passed="7">
+  <reporter-output>
+  </reporter-output>
+  <suite name="用户管理系统测试套件" duration-ms="11440" started-at="2020-06-11T07:32:09Z" finished-at="2020-06-11T07:32:21Z">
+    <groups>
+      <group name="loginTrue">
+        <method signature="LoginTest.loginTrue()[pri:0, instance:com.tester.cases.LoginTest@4c203ea1]" name="loginTrue" class="com.tester.cases.LoginTest"/>
+      </group> <!-- loginTrue -->
+    </groups>
+    <test name="用户管理系统测试用例" duration-ms="11440" started-at="2020-06-11T07:32:09Z" finished-at="2020-06-11T07:32:21Z">
+      <class name="com.tester.cases.LoginTest">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.tester.cases.LoginTest@4c203ea1]" name="beforeTest" is-config="true" duration-ms="46" started-at="2020-06-11T15:32:09Z" description="测试准备工作,获取HttpClient对象" finished-at="2020-06-11T15:32:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="loginTrue()[pri:0, instance:com.tester.cases.LoginTest@4c203ea1]" name="loginTrue" duration-ms="817" started-at="2020-06-11T15:32:09Z" description="用户成功登陆接口" finished-at="2020-06-11T15:32:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTrue -->
+        <test-method status="PASS" signature="loginFalse()[pri:0, instance:com.tester.cases.LoginTest@4c203ea1]" name="loginFalse" duration-ms="48" started-at="2020-06-11T15:32:10Z" description="用户登陆失败接口" finished-at="2020-06-11T15:32:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginFalse -->
+      </class> <!-- com.tester.cases.LoginTest -->
+      <class name="com.tester.cases.UpdateUserInfoTest">
+        <test-method status="PASS" signature="updateUserInfo()[pri:0, instance:com.tester.cases.UpdateUserInfoTest@58ceff1]" name="updateUserInfo" duration-ms="2117" depends-on-groups="loginTrue" started-at="2020-06-11T15:32:15Z" description="更改用户信息" finished-at="2020-06-11T15:32:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateUserInfo -->
+        <test-method status="PASS" signature="deleteUser()[pri:0, instance:com.tester.cases.UpdateUserInfoTest@58ceff1]" name="deleteUser" duration-ms="2038" depends-on-groups="loginTrue" started-at="2020-06-11T15:32:17Z" description="删除用户" finished-at="2020-06-11T15:32:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteUser -->
+      </class> <!-- com.tester.cases.UpdateUserInfoTest -->
+      <class name="com.tester.cases.GetUserInfoListTest">
+        <test-method status="PASS" signature="getUserListInfo()[pri:0, instance:com.tester.cases.GetUserInfoListTest@7c30a502]" name="getUserListInfo" duration-ms="2073" depends-on-groups="loginTrue" started-at="2020-06-11T15:32:19Z" description="获取性别为男的用户信息" finished-at="2020-06-11T15:32:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getUserListInfo -->
+      </class> <!-- com.tester.cases.GetUserInfoListTest -->
+      <class name="com.tester.cases.GetUserInfoTest">
+        <test-method status="PASS" signature="getUserInfo()[pri:0, instance:com.tester.cases.GetUserInfoTest@48140564]" name="getUserInfo" duration-ms="2072" depends-on-groups="loginTrue" started-at="2020-06-11T15:32:13Z" description="获取userId为1的用户信息" finished-at="2020-06-11T15:32:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getUserInfo -->
+      </class> <!-- com.tester.cases.GetUserInfoTest -->
+      <class name="com.tester.cases.AddUserTest">
+        <test-method status="PASS" signature="addUser()[pri:0, instance:com.tester.cases.AddUserTest@27f674d]" name="addUser" duration-ms="2210" depends-on-groups="loginTrue" started-at="2020-06-11T15:32:10Z" description="添加用户接口接口" finished-at="2020-06-11T15:32:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addUser -->
+      </class> <!-- com.tester.cases.AddUserTest -->
+    </test> <!-- 用户管理系统测试用例 -->
+  </suite> <!-- 用户管理系统测试套件 -->
+</testng-results>
